@@ -1,4 +1,4 @@
-# CERTIFIED TECH DEVELOPER $
+# CERTIFIED TECH DEVELOPER :man_technologist:
 
 ## Bem Vindo(a) - Desenvolvimento Segundo Semestre - CTD
 
