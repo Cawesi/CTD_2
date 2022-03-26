@@ -23,3 +23,6 @@ tabuleiro[6].innerText = "O";
 
 // Jogada 08
 tabuleiro[7].innerText = "O";
+
+// Jogada 09
+tabuleiro[8].innerText = "O";
