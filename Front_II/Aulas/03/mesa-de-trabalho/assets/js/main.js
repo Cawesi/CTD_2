@@ -11,3 +11,6 @@ tabuleiro[2].innerText = "X";
 
 // Jogada 04
 tabuleiro[3].innerText = "O";
+
+// Jogada 05
+tabuleiro[4].innerText = "X";
