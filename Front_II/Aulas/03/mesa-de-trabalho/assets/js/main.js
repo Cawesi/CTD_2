@@ -5,3 +5,6 @@ tabuleiro[0].innerText = "X";
 
 // Jogada 02
 tabuleiro[1].innerText = "O";
+
+// Jogada 03
+tabuleiro[2].innerText = "X";
