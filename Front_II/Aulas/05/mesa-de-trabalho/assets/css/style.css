@@ -45,15 +45,9 @@ section {
 */
 
 .removido {
-    /*
-        Adicione um cor para o item quando removido.
-        Um exemplo seria a cor vermelha.
-    */
+    background-color: red;
 }
 
 .selecionado {
-    /*
-        Adicione uma cor para item quando selecionado.
-        Um exemplo seria a cor verde e/ou azul.
-    */
+    background-color: blue;
 }
