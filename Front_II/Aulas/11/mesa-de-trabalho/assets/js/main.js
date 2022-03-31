@@ -28,6 +28,22 @@ function tem_caracter_especial(valor){
     return valor_tratado;
 };
 
+let validar_entrada = document.querySelector('.c-form__campo');
+let btn = document.querySelector('.c-form__botao');
+
+validar_entrada.addEventListener('mouseout', function(){
+
+    if (this.value == ''){
+
+        alert('Vazio')
+        btn.style.backgroundColor = 'grey';
+        btn.setAttribute('disabled', 'true');
+    } else {
+        btn.style.backgroundColor = 'orangered';
+        btn.removeAttribute('disabled');
+    }
+})
+
 
 // Crie uma rotina que será disparada a partir do evento de envio
 formulario.addEventListener('submit', function(event){ 
@@ -40,12 +56,13 @@ formulario.addEventListener('submit', function(event){
 
         alert("Não é permitido o uso de caracteres especiais em sua lista.");
     } else {
-
+        let li_empyt = document.querySelector('.c-lista__item_empyt');
+        li_empyt.innerText = "";
         // Caso passe na validacão, apresente o item no elemento DOM `<li class="c-lista__item">`.
         let lista = document.querySelector('.c-lista');
         let li = document.createElement('li');
         li.classList.add('c-lista__item');
-        li.innerText = valor_imput;
+        li.innerText = 	`- ${valor_imput}`;
         lista.appendChild(li);
     };
 });
