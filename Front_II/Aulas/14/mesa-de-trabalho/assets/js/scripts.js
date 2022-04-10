@@ -1,6 +1,36 @@
+let formulario = document.forms[0];
+// console.log(formulario[0]);
+
+let btn_page_one = document.querySelector('.c-form__botao');
+
+btn_page_one.addEventListener('click', function(event){
+
+    event.preventDefault();
+
+    let user_name = document.querySelector('.c-form__campo').value;
+
+    // let endereco_completo = location.href;
+    // let parametro = location.search;
+    // let rota = location.pathname;
+    // let dominio = location.hostname;
+    // let dominio_completo = location.host;
+    // let porta = location.port;
+    // let protocolo = location.protocol;
+
+    let select = document.getElementById('select');
+    let lang_value = select.options[select.selectedIndex].value;
+
+    endereco_completo = `http://127.0.0.1:5500/Front_II/Aulas/14/mesa-de-trabalho/resultado/index.html?nome=${user_name}&lang=${lang_value}`;
+    // console.log(endereco_completo)
+
+    window.location.replace(endereco_completo);
+
+});
+    
+
+
 
 /*
-
     Implemente seu algorítmo aqui...
 
     Resumo da atividade:
